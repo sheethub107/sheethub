@@ -1,43 +1,167 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>SheetHub – Smart Excel Cleaner</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SheetHub — Smart Excel Cleaner</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #0f172a;
+      color: #e5e7eb;
+      line-height: 1.6;
+    }
+    header {
+      background: #020617;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      color: #38bdf8;
+    }
+    header p {
+      max-width: 600px;
+      margin: 10px auto;
+      color: #cbd5f5;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2 {
+      color: #38bdf8;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    .card {
+      background: #020617;
+      border-radius: 8px;
+      padding: 20px;
+      margin-top: 20px;
+    }
+    .cta {
+      text-align: center;
+      margin-top: 30px;
+    }
+    .cta button {
+      padding: 14px 26px;
+      font-size: 16px;
+      background-color: #22c55e;
+      color: #020617;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .cta button:hover {
+      background-color: #16a34a;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #020617;
+      color: #94a3b8;
+      font-size: 0.9rem;
+    }
+    a {
+      color: #38bdf8;
+      text-decoration: none;
+    }
+  </style>
 </head>
+
 <body>
+
+<header>
   <h1>SheetHub</h1>
-
   <p>
-    SheetHub is an AI-powered Excel cleaning and analysis tool.
-    Users can upload Excel files, clean data, remove duplicates,
-    generate AI insights, and download cleaned files.
+    Smart Excel Cleaner that helps you clean, analyze, and visualize Excel files
+    in seconds — without complex formulas.
   </p>
+</header>
 
-  <h2>Services</h2>
+<section>
+  <h2>🚀 What is SheetHub?</h2>
+  <p>
+    SheetHub is a web-based SaaS tool designed for students, professionals, and businesses
+    to clean Excel data, remove duplicates, generate AI insights, and create charts instantly.
+  </p>
+</section>
+
+<section>
+  <h2>🛠️ Features</h2>
   <ul>
     <li>Excel data cleaning</li>
     <li>Duplicate removal</li>
-    <li>AI insights generation</li>
-    <li>Charts & analytics</li>
+    <li>AI-powered insights</li>
+    <li>Smart charts & analytics</li>
+    <li>No Excel formulas required</li>
   </ul>
+</section>
 
-  <h2>Pricing</h2>
+<section>
+  <h2>💰 Pricing</h2>
+  <div class="card">
+    <h3>Free Plan</h3>
+    <ul>
+      <li>Up to 5 files per day</li>
+      <li>Basic cleaning & AI insights</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>Pro Plan (Coming Soon)</h3>
+    <ul>
+      <li>Unlimited file uploads</li>
+      <li>Advanced AI insights</li>
+      <li>Priority processing</li>
+    </ul>
+  </div>
+</section>
+
+<section class="cta">
+  <h2>🚀 Try SheetHub Now</h2>
+  <p>Upload your Excel file and see the magic in seconds.</p>
+
+  <!-- TEMP LINK: Will update after Streamlit deployment -->
+  <a href="https://app.sheethub.io" target="_blank">
+    <button>Launch SheetHub App</button>
+  </a>
+</section>
+
+<section>
+  <h2>📩 Contact</h2>
   <p>
-    Free users get limited daily usage.
-    Paid plans offer unlimited access.
+    Email:
+    <a href="mailto:sheethub107@gmail.com">sheethub107@gmail.com</a>
+  </p>
+</section>
+
+<section>
+  <h2>📜 Policies</h2>
+  <p>
+    <strong>Refund Policy:</strong><br/>
+    SheetHub currently offers free access. Paid plans will be introduced soon.
+    Refund policies will be clearly defined before any paid subscription launch.
   </p>
 
-  <h2>Contact</h2>
-  <p>Email: sheethub107@gmail.com</p>
-
-  <h2>Refund Policy</h2>
   <p>
-    Refunds are provided in case of technical issues or failed service delivery.
+    <strong>Privacy Policy:</strong><br/>
+    SheetHub does not permanently store uploaded Excel files.
+    Files are processed temporarily and automatically removed after processing.
   </p>
-  <h2>Terms of Service</h2>
-<p>
-  By using SheetHub, users agree to our terms of service.
-  The service is provided as-is for Excel data processing.
-</p>
+</section>
+
+<footer>
+  © 2026 SheetHub. All rights reserved.
+</footer>
 
 </body>
 </html>
