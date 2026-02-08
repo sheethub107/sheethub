@@ -23,44 +23,138 @@ gtag('config','G-6TEPGH7BJV');
 </script>
 
 <style>
-body{margin:0;font-family:Inter,Arial;background:#020617;color:#fff}
-section{padding:80px 20px;max-width:1100px;margin:auto}
-.hero{text-align:center;padding:120px 20px;background:radial-gradient(circle at top,#0f172a,#020617)}
-h1{font-size:3.4rem;color:#38bdf8}
-p{color:#cbd5f5}
-.btn{padding:18px 40px;border-radius:12px;border:none;background:linear-gradient(135deg,#22c55e,#16a34a);font-size:17px;font-weight:700;cursor:pointer}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px}
-.card{background:#0f172a;padding:30px;border-radius:16px}
-.badge{background:#0f172a;padding:10px 18px;border-radius:20px;display:inline-block;margin:5px}
-input{padding:16px;border-radius:10px;border:none;width:280px}
-footer{text-align:center;padding:40px;background:#020617;color:#94a3b8}
+body{
+  margin:0;
+  font-family:Inter,Arial;
+  background:#020617;
+  color:#fff;
+}
+
+/* HERO */
+.hero{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:120px 20px;
+  background:
+    linear-gradient(
+      rgba(2,6,23,0.88),
+      rgba(2,6,23,0.88)
+    ),
+    url("https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1600&q=80");
+  background-size:cover;
+  background-position:center;
+}
+
+.hero h1{
+  font-size:3.6rem;
+  color:#38bdf8;
+  max-width:900px;
+  margin:auto;
+}
+
+.hero p{
+  max-width:720px;
+  margin:18px auto;
+  color:#cbd5f5;
+  font-size:1.15rem;
+}
+
+/* BUTTONS */
+.btn-primary{
+  padding:18px 42px;
+  border-radius:14px;
+  border:none;
+  background:linear-gradient(135deg,#22c55e,#16a34a);
+  font-size:18px;
+  font-weight:700;
+  cursor:pointer;
+}
+
+.btn-secondary{
+  padding:16px 30px;
+  border-radius:14px;
+  border:none;
+  background:#0f172a;
+  color:#fff;
+  font-size:16px;
+  font-weight:600;
+}
+
+/* TRUST STRIP */
+.trust{
+  display:flex;
+  gap:20px;
+  justify-content:center;
+  flex-wrap:wrap;
+  margin:30px 0;
+  color:#94a3b8;
+  font-size:14px;
+}
+
+/* EMAIL */
+.email-box{
+  display:flex;
+  gap:12px;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+
+input{
+  padding:16px;
+  border-radius:12px;
+  border:none;
+  width:260px;
+}
+
 a{color:#38bdf8;text-decoration:none}
 </style>
+
 </head>
 
 <body>
 
-<div class="hero">
-<h1>Clean Excel Data in Seconds with AI</h1>
+<header class="hero">
+  <div>
 
-<p>SheetHub removes duplicates, analyzes spreadsheets and generates charts automatically.  
-No formulas. No learning curve.</p>
+    <h1>Clean Excel Data in Seconds with AI</h1>
 
-<br>
+    <p>
+      SheetHub removes duplicates, analyzes spreadsheets and generates charts
+      automatically. No formulas. No learning curve.
+    </p>
 
-<a href="https://sheethb.streamlit.app/" target="_blank">
-<button class="btn">Launch App Free</button>
-</a>
+    <!-- PRIMARY CTA -->
+    <a href="https://sheethb.streamlit.app/" target="_blank">
+      <button class="btn-primary">Launch App Free</button>
+    </a>
 
-<br><br>
+    <!-- TRUST STRIP (NEW GAP SECTION) -->
+    <div class="trust">
+      <span>✔ No signup required</span>
+      <span>✔ Secure processing</span>
+      <span>✔ Works in browser</span>
+      <span>✔ Free to start</span>
+    </div>
 
-<form action="https://formspree.io/f/xnjzeyyl" method="POST">
-<input type="email" name="email" placeholder="Enter email for updates" required>
-<button class="btn" type="submit">Join Waitlist</button>
-</form>
+    <!-- EMAIL CAPTURE -->
+    <form 
+      action="https://formspree.io/f/xnjzeyyl" 
+      method="POST"
+      class="email-box"
+    >
+      <input type="email" name="email" placeholder="Enter email for updates" required>
+      <button class="btn-secondary" type="submit">Join Waitlist</button>
+    </form>
 
-<p style="font-size:13px;margin-top:10px">Trusted by early users worldwide</p>
-</div>
+    <p style="font-size:13px;margin-top:12px;color:#94a3b8">
+      Trusted by early users worldwide
+    </p>
+
+  </div>
+</header>
 
 <section>
 <h2>Why SheetHub?</h2>
